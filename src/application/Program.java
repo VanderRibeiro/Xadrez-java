@@ -11,10 +11,17 @@ import chess.ChessPosition;
 public class Program {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 
 		Scanner sc = new Scanner(System.in);
 		ChessMatch chessMatch = new ChessMatch();
 
+=======
+		
+		Scanner sc = new Scanner(System.in);
+		ChessMatch chessMatch = new ChessMatch();
+		
+>>>>>>> d11f6db (Implementando movimentos para a torre)
 		while (true) {
 			try {
 				UI.clearScreen();
@@ -22,6 +29,7 @@ public class Program {
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
+<<<<<<< HEAD
 
 				System.out.println();
 				System.out.print("Target: ");
@@ -32,9 +40,27 @@ public class Program {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			} catch (InputMismatchException e) {
+=======
+				
+				System.out.println();
+				System.out.print("Target: ");
+				ChessPosition target = UI.readChessPosition(sc);
+				
+				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
+			}
+			catch (ChessException e) {
+				System.out.println(e.getMessage());
+				sc.nextLine();
+			}
+			catch (InputMismatchException e) {
+>>>>>>> d11f6db (Implementando movimentos para a torre)
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d11f6db (Implementando movimentos para a torre)

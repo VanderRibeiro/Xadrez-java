@@ -8,8 +8,13 @@ public class ChessPosition {
 	private int row;
 	
 	public ChessPosition(char column, int row) {
+<<<<<<< HEAD
 		if (column < 'a' || column > 'h' || row > 8) {
 			throw new ChessException("Error  instantiating chess position. Valid values are from A1 to H8.");
+=======
+		if (column < 'a' || column > 'h' || row < 1 || row > 8) {
+			throw new ChessException("Error instantiating ChessPosition. Valid values are from a1 to h8.");
+>>>>>>> d11f6db (Implementando movimentos para a torre)
 		}
 		this.column = column;
 		this.row = row;
@@ -22,7 +27,11 @@ public class ChessPosition {
 	public int getRow() {
 		return row;
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> d11f6db (Implementando movimentos para a torre)
 	protected Position toPosition() {
 		return new Position(8 - row, column - 'a');
 	}
@@ -35,4 +44,8 @@ public class ChessPosition {
 	public String toString() {
 		return "" + column + row;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d11f6db (Implementando movimentos para a torre)
