@@ -76,9 +76,4 @@ public class King extends ChessPiece {
 		}
 		return mat;
 	}
-<<<<<<< HEAD
-	
 }
-=======
-}
->>>>>>> d11f6db (Implementando movimentos para a torre)
